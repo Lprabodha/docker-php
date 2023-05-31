@@ -1,0 +1,10 @@
+version: '3.9'
+
+services:
+  app:
+    build: .
+    image: lprabodha/$APP_IMAGE
+    restart: unless-stopped
+    container_name: app
+    ports:
+      - 8000:80
