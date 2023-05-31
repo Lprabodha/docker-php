@@ -7,4 +7,4 @@ services:
     restart: unless-stopped
     container_name: app
     ports:
-      - 8000:80
+      - $NGINX_PORT:80
